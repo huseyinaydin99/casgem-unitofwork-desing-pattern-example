@@ -1,0 +1,25 @@
+﻿@model CasgemUOW.EntityLayer.Concrete.CustomerProcess
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <label>Gönderen Id</label>
+        <input type="text" class="form-control" asp-for="SenderId" />
+        <br />
+
+        <label>Alıcı Id</label>
+        <input type="text" class="form-control" asp-for="ReceiverId" />
+        <br />
+
+        <label>Miktar</label>
+        <input type="text" class="form-control" asp-for="Amout" />
+        <br />
+
+        <button class="btn btn-success">Para Gönder</button>
+    </form>
+</div>

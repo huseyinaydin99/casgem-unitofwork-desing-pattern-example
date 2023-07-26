@@ -33,6 +33,7 @@ namespace CasgemUOW.PresentationLayer.Controllers
             {
                 valueSender, valueReceiver
             };
+            _customerProcessService.Insert(customerProcess);
             _customerService.MultiUpdate(modified);
             return View();
         }
