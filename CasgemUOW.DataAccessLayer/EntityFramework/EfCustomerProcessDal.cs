@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace CasgemUOW.DataAccessLayer.EntityFramework
 {
-    public class EfCustomerDal : GenericRepository<Customer>, ICustomerDal
+    public class EfCustomerProcessDal : GenericRepository<CustomerProcess> ,ICustomerProcessDal
     {
-        public EfCustomerDal(Context context) : base(context)
+        public EfCustomerProcessDal(Context context) : base(context)
         {
 
         }
