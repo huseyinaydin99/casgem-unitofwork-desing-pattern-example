@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Casgem.EntityLayer\CasgemUOW.EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UnitOfWork\Concrete\" />
+  </ItemGroup>
+
 </Project>
