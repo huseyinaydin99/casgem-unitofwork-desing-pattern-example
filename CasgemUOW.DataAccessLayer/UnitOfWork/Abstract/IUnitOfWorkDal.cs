@@ -8,6 +8,6 @@ namespace CasgemUOW.DataAccessLayer.UnitOfWork.Abstract
 {
     public interface IUnitOfWorkDal
     {
-        void Save();
+        void Commit();
     }
 }
