@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemUOW.EntityLayer", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemUOW.DataAccessLayer", "CasgemUOW.DataAccessLayer\CasgemUOW.DataAccessLayer.csproj", "{9C2EF3E0-8F14-4306-9E69-6360E2868384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemUOW.Business", "CasgemUOW.Business\CasgemUOW.Business.csproj", "{D0B50E27-CCE6-42CD-8DB6-E3D24BFC254A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemUOW.BusinessLayer", "CasgemUOW.Business\CasgemUOW.BusinessLayer.csproj", "{D0B50E27-CCE6-42CD-8DB6-E3D24BFC254A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
