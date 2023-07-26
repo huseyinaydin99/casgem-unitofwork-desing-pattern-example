@@ -1,8 +1,22 @@
+using CasgemUOW.BusinessLayer.Abstract;
+using CasgemUOW.BusinessLayer.Concrete;
+using CasgemUOW.DataAccessLayer.Abstract;
+using CasgemUOW.DataAccessLayer.Concrete;
+using CasgemUOW.DataAccessLayer.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<Context>(opt=> opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<ICustomerService, CustomerManager>();
+builder.Services.AddScoped<ICustomerDal, EfCustomerDal>();
+
+builder.Services.AddScoped<ICustomerProcessService, CustomerProcessManager>();
+builder.Services.AddScoped<ICustomerProcessDal, EfCustomerProcessDal>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
