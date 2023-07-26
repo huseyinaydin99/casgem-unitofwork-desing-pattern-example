@@ -3,6 +3,8 @@ using CasgemUOW.BusinessLayer.Concrete;
 using CasgemUOW.DataAccessLayer.Abstract;
 using CasgemUOW.DataAccessLayer.Concrete;
 using CasgemUOW.DataAccessLayer.EntityFramework;
+using CasgemUOW.DataAccessLayer.UnitOfWork.Abstract;
+using CasgemUOW.DataAccessLayer.UnitOfWork.Concrete;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,8 @@ builder.Services.AddScoped<ICustomerDal, EfCustomerDal>();
 
 builder.Services.AddScoped<ICustomerProcessService, CustomerProcessManager>();
 builder.Services.AddScoped<ICustomerProcessDal, EfCustomerProcessDal>();
+
+builder.Services.AddScoped<IUnitOfWorkDal, UnitOfWorkDal>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
