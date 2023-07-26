@@ -17,9 +17,9 @@ namespace CasgemUOW.DataAccessLayer.UnitOfWork.Concrete
             _context = context;
         }
 
-        public void Commit()
+        public void Commit() //Sultan Abdülhamit Hanın mührüdür. Veriyi DB'de kalıcı hale getirir.
         {
-            _context.SaveChanges();
+            _context.SaveChanges(); //DB'de verileri kalıcı hale getirir.
         }
     }
 }
